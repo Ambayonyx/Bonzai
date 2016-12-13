@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>bonzai</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>jpaej0f8z8gx</unique-id>
+    <saved-with-version>23900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="TiledBackground" sid="828008338872145">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\eddie_000\Pictures\pws\background afgewerkt.png" />
+        </object-type>
+        <object-type name="Keyboard" sid="720607158286243">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="vloer" sid="418081783557725">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="715373448223527">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="129138921403236" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="player" sid="704843511933296">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="checkpointX" sid="324991520866092" type="number" />
+                <instance-variable name="checkpointY" sid="516899371128935" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="386307872077990">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="222274873534852">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="949035397543651">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="345711246892587" speed="5">
+                    <frame duration="1" hotspotX="0.443114" hotspotY="0.549451" original-source="C:\Users\eddie_000\Documents\pws\hoofdpersoon.png">
+                        <image-point name="Imagepoint 1" x="0.562874" y="0.714286" />
+                        <collision-poly>
+                            <point x="0.263473" y="0.148352" />
+                            <point x="0.628743" y="0.142857" />
+                            <point x="0.940119" y="0.428572" />
+                            <point x="0.892216" y="0.741758" />
+                            <point x="0.658683" y="0.978022" />
+                            <point x="0.293413" y="0.983516" />
+                            <point x="0.0179641" y="0.741759" />
+                            <point x="0.0299401" y="0.346154" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="obstakel" sid="591095840645795">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="573314769841862">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="419959503584428" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemy" sid="556470391195470">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Turret" sid="868396110616064">
+                    <behavior id="Turret" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="796019931305203">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="131439816162264" speed="5">
+                    <frame duration="1" hotspotX="0.513228" hotspotY="0.533333" original-source="C:\Users\eddie_000\Documents\pws\vijand met haar.png">
+                        <image-point name="Imagepoint 1" x="0.989418" y="0.65641" />
+                        <collision-poly>
+                            <point x="0.111111" y="0.435898" />
+                            <point x="0.243386" y="0.210256" />
+                            <point x="0.455026" y="0.107692" />
+                            <point x="0.698413" y="0.14359" />
+                            <point x="0.910053" y="0.317949" />
+                            <point x="0.962963" y="0.533333" />
+                            <point x="0.883598" y="0.774359" />
+                            <point x="0.722222" y="0.897436" />
+                            <point x="0.440476" y="0.933334" />
+                            <point x="0.154101" y="0.735897" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="kogel" sid="484596667559541">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="364562668014581">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="903893456235676">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="690357185197923" speed="5">
+                    <frame duration="1" hotspotX="-0.980392" hotspotY="0.508571" original-source="C:\Users\eddie_000\Pictures\pws\bullet.png">
+                        <collision-poly>
+                            <point x="0.529412" y="0.131429" />
+                            <point x="0.901961" y="0.508571" />
+                            <point x="0.705882" y="0.937143" />
+                            <point x="0.235294" y="0.508571" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="159880773930758">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="TiledBackground2" sid="105232998908864">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="437413984465630">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\eddie_000\Pictures\pws\plateau af.png" />
+        </object-type>
+        <object-type name="Audio" sid="555650001177347">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="offscreen" sid="917077100083444">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="660601865541057">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="979505058509513" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="portal" sid="331349921488814">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="nummer" sid="706159540884966" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="117836587536151" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="muziekKnop" sid="307552347094524">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="muziek" sid="569248868255263" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Anchor" sid="576276105957213">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="519050323369889" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="967652138508452">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="767897820533915" speed="5">
+                    <frame duration="1" hotspotX="0.654596" hotspotY="0.5" original-source="C:\Users\eddie_000\Google Drive\GameDevelopmentStrabrecht\foto&apos;s\begin 1.2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="checkpoint" sid="121082375551330">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="320513923536608" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+        <layout>Layout 2.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="1" />
+        <global-instance type="Mouse" uid="9" />
+        <global-instance type="Audio" uid="8">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="schietgeluid.m4a" />
+        <file name="schietgeluid.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

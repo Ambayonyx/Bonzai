@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="538183143425236">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="893055434249685" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+                <condition id="-3" name="Is on-screen" sid="295657637769538" type="enemy" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="684639116593999" type="enemy">
+                    <param id="0" name="Object">kogel</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action behavior="Turret" id="0" name="Acquire target" sid="789226623988256" type="enemy">
+                    <param id="0" name="Target">player</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="374622280698197">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="137400561439665" type="System" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="724781032854715" type="enemy">
+                    <param id="0" name="X">player.X</param>
+                    <param id="1" name="Y">player.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="916733572451658">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="710385094698263" type="kogel">
+                    <param id="0" name="Object">player</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="248714419899895" type="portal">
+                    <param id="0" name="Instance variable">nummer</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="580194734982524" type="player">
+                    <param id="0" name="Object">checkpoint</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="978334238952298">
+            <conditions>
+                <condition id="-13" name="Is between angles" sid="371655894691540" type="enemy">
+                    <param id="0" name="First angle">90</param>
+                    <param id="1" name="Second angle">270</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Set flipped" sid="839774657812090" type="enemy">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="492406943146828">
+            <conditions>
+                <condition id="-13" name="Is between angles" sid="348470381618349" type="enemy">
+                    <param id="0" name="First angle">270</param>
+                    <param id="1" name="Second angle">450</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Set flipped" sid="448454910109101" type="enemy">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="994676480528944">
+            <conditions>
+                <condition id="2" name="Key is down" sid="272704080994371" type="Keyboard">
+                    <param id="0" name="Key">68 (D)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="988582393976586" type="player">
+                    <param id="0" name="Distance">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="497483182897990">
+            <conditions>
+                <condition id="2" name="Key is down" sid="832371258503989" type="Keyboard">
+                    <param id="0" name="Key">65 (A)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="830820153041851" type="player">
+                    <param id="0" name="Angle">180</param>
+                    <param id="1" name="Distance">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="409756665890465">
+            <conditions>
+                <condition id="2" name="Key is down" sid="557379102858000" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="378141840376538" type="player">
+                    <param id="0" name="Angle">270</param>
+                    <param id="1" name="Distance">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="709067251896979">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="525086607012025" type="System" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="759637897323276" type="player">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="804346871816222">
+            <conditions>
+                <condition id="-13" name="Is between angles" sid="986237931780519" type="player">
+                    <param id="0" name="First angle">90</param>
+                    <param id="1" name="Second angle">270</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Set flipped" sid="106205856105302" type="player">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="501952252113420">
+            <conditions>
+                <condition id="-13" name="Is between angles" sid="310977146974488" type="player">
+                    <param id="0" name="First angle">270</param>
+                    <param id="1" name="Second angle">450</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Set flipped" sid="946418252495046" type="player">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="118412281104638">
+            <conditions>
+                <condition id="0" name="On click" sid="560497248414242" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="155437472220758" type="player">
+                    <param id="0" name="Object">kogel</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Play" sid="106370879866836" type="Audio">
+                    <param id="0" name="Audio file">schietgeluid</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="565545774545152">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="613702168987325" type="kogel">
+                    <param id="0" name="Object">enemy</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="546084886035407" type="enemy" />
+            </actions>
+        </event-block>
+        <event-block any="1" sid="145251909176435">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="510149993868209" type="kogel">
+                    <param id="0" name="Object">obstakel</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="762657677034762" type="kogel">
+                    <param id="0" name="Object">vloer</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="499506331793197" type="kogel">
+                    <param id="0" name="Object">offscreen</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="464925474594518" type="kogel" />
+            </actions>
+        </event-block>
+        <event-block sid="560272752801445">
+            <conditions>
+                <condition behavior="Turret" id="0" name="Has target" sid="951055282302526" type="enemy" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="840420176177453" type="Audio">
+                    <param id="0" name="Audio file">schietgeluid</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="Turret" id="2" name="Clear targets" sid="819154226845835" type="enemy" />
+            </actions>
+        </event-block>
+        <event-block sid="694486859672570">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="232133124122956" type="player">
+                    <param id="0" name="Object">portal</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="871975213012916" type="player">
+                    <param id="0" name="X">player.X</param>
+                    <param id="1" name="Y">player.Y - 600</param>
+                </action>
+                <action id="-11" name="Add to" sid="786285714431733" type="portal">
+                    <param id="0" name="Instance variable">nummer</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="164266716113990" type="checkpoint">
+                    <param id="0" name="X">player.X</param>
+                    <param id="1" name="Y">player.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="968110028346040">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="467851545522928" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">muziekKnop</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="115938488437965" type="muziekKnop">
+                    <param id="0" name="Instance variable">muziek</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="111329277563859">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="997702517792192" type="System" />
+                <condition id="-7" name="Compare instance variable" sid="250662042637155" type="muziekKnop">
+                    <param id="0" name="Instance variable">muziek</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="2" name="Set muted" sid="912577677404569" type="Audio">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="674160778495155">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="698230304586270" type="player">
+                    <param id="0" name="Object">checkpoint</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="740572223038348" type="player">
+                    <param id="0" name="Instance variable">checkpointX</param>
+                    <param id="1" name="Value">player.X</param>
+                </action>
+                <action id="-10" name="Set value" sid="736645258490317" type="player">
+                    <param id="0" name="Instance variable">checkpointY</param>
+                    <param id="1" name="Value">player.Y</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
