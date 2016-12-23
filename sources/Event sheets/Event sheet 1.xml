@@ -19,6 +19,10 @@
                 <action behavior="Turret" id="0" name="Acquire target" sid="789226623988256" type="enemy">
                     <param id="0" name="Target">player</param>
                 </action>
+                <action id="-10" name="Set value" sid="162823706562537" type="kogel">
+                    <param id="0" name="Instance variable">afkomst</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="374622280698197">
@@ -37,9 +41,9 @@
                 <condition id="0" name="On collision with another object" sid="710385094698263" type="kogel">
                     <param id="0" name="Object">player</param>
                 </condition>
-                <condition id="-7" name="Compare instance variable" sid="248714419899895" type="portal">
-                    <param id="0" name="Instance variable">nummer</param>
-                    <param id="1" name="Comparison">5</param>
+                <condition id="-7" name="Compare instance variable" sid="525647007688192" type="kogel">
+                    <param id="0" name="Instance variable">afkomst</param>
+                    <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
@@ -48,6 +52,13 @@
                     <param id="0" name="Object">checkpoint</param>
                     <param id="1" name="Image point (optional)">0</param>
                 </action>
+                <action id="0" name="Spawn another object" sid="831007937883345" type="waarEnemyStond">
+                    <param id="0" name="Object">enemy</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="408463128133182" type="waarEnemyStond" />
+                <action id="-9" name="Destroy" sid="838001304788296" type="kogel" />
             </actions>
         </event-block>
         <event-block sid="978334238952298">
@@ -170,6 +181,10 @@
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
+                <action id="-10" name="Set value" sid="117735235508606" type="kogel">
+                    <param id="0" name="Instance variable">afkomst</param>
+                    <param id="1" name="Value">2</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="565545774545152">
@@ -177,9 +192,20 @@
                 <condition id="0" name="On collision with another object" sid="613702168987325" type="kogel">
                     <param id="0" name="Object">enemy</param>
                 </condition>
+                <condition id="-7" name="Compare instance variable" sid="586466618536366" type="kogel">
+                    <param id="0" name="Instance variable">afkomst</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="546084886035407" type="enemy" />
+                <action id="0" name="Spawn another object" sid="403315956323176" type="enemy">
+                    <param id="0" name="Object">waarEnemyStond</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="675896388262478" type="kogel" />
             </actions>
         </event-block>
         <event-block any="1" sid="145251909176435">
@@ -223,14 +249,11 @@
                     <param id="0" name="X">player.X</param>
                     <param id="1" name="Y">player.Y - 600</param>
                 </action>
-                <action id="-11" name="Add to" sid="786285714431733" type="portal">
-                    <param id="0" name="Instance variable">nummer</param>
-                    <param id="1" name="Value">1</param>
-                </action>
                 <action id="-3" name="Set position" sid="164266716113990" type="checkpoint">
                     <param id="0" name="X">player.X</param>
                     <param id="1" name="Y">player.Y</param>
                 </action>
+                <action id="-9" name="Destroy" sid="735712370409660" type="waarEnemyStond" />
             </actions>
         </event-block>
         <event-block sid="968110028346040">
