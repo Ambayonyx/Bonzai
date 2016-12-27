@@ -375,6 +375,54 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite5" sid="273180442875725">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="252241601674589" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Algemeen\Google Drive\GameDevelopmentStrabrecht\foto&apos;s\begin 2.1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="694748326124978">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="920017547765297" speed="5">
+                    <frame duration="1" hotspotX="0.500266" hotspotY="0.5" original-source="C:\Users\Algemeen\Google Drive\GameDevelopmentStrabrecht\foto&apos;s\begin van de game.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="837799061322870">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="345602802505640" speed="5">
+                    <frame duration="1" hotspotX="0.500266" hotspotY="0.5" original-source="C:\Users\Algemeen\Google Drive\GameDevelopmentStrabrecht\foto&apos;s\begin 5.1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="895680109552137">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="390558367274714" speed="5">
+                    <frame duration="1" hotspotX="0.500266" hotspotY="0.5" original-source="C:\Users\Algemeen\Google Drive\GameDevelopmentStrabrecht\foto&apos;s\begin 4.1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite9" sid="569800210725093">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="864647612935137" speed="5">
+                    <frame duration="1" hotspotX="0.500266" hotspotY="0.5" original-source="C:\Users\Algemeen\Google Drive\GameDevelopmentStrabrecht\foto&apos;s\begin 3.1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite10" sid="444022915342128">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="924941883792423" speed="5">
+                    <frame duration="1" hotspotX="0.500266" hotspotY="0.5" original-source="C:\Users\Algemeen\Google Drive\GameDevelopmentStrabrecht\foto&apos;s\begin 3.1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -404,8 +452,9 @@
         </global-instance>
     </global-instances>
     <sounds-folder>
-        <file name="schietgeluid.m4a" />
         <file name="schietgeluid.ogg" />
+        <file name="schietgeluidsnel.ogg" />
+        <file name="schietgeluidzwaar.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>

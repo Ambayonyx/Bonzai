@@ -312,7 +312,7 @@
             </conditions>
             <actions>
                 <action id="0" name="Play" sid="575851997085749" type="Audio">
-                    <param id="0" name="Audio file">schietgeluid</param>
+                    <param id="0" name="Audio file">schietgeluidzwaar</param>
                     <param id="2" name="Loop">0</param>
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
