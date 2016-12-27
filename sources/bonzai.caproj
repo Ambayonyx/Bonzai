@@ -253,7 +253,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="bovenkant" sid="915063893020032">
+        <object-type name="buitenLayout" sid="915063893020032">
             <plugin id="TiledBg" />
             <behaviors>
                 <behavior-type name="Solid" sid="582199050125633">
@@ -261,6 +261,119 @@
                 </behavior-type>
             </behaviors>
             <texture />
+        </object-type>
+        <object-type name="achtergrondLevel2" sid="153188917817236">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\eddie_000\Documents\pws\achtergrondLevel2(25%rood).png" />
+        </object-type>
+        <object-type name="achtergrondLevel3" sid="556590762213484">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\eddie_000\Documents\pws\achtergrondLevel3(50%).png" />
+        </object-type>
+        <object-type name="achtergrondLevel4" sid="892488443154723">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\eddie_000\Documents\pws\achtergrondLevel4(75%).png" />
+        </object-type>
+        <object-type name="levelportal" sid="489886943424788">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="626836140840330" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground5" sid="425279515254226">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Sprite2" sid="948378424224034">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="378635390149085" speed="5">
+                    <frame duration="1" hotspotX="0.500266" hotspotY="0.5" original-source="C:\Users\eddie_000\Documents\pws\alle 3 de vijanden.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="520899220238867">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="589198443480839" speed="5">
+                    <frame duration="1" hotspotX="0.500266" hotspotY="0.5" original-source="C:\Users\eddie_000\Documents\pws\alle 3 de vijanden.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemyshotgun" sid="744084252075712">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Turret" sid="707483082012768">
+                    <behavior id="Turret" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="769806302991664">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="214515033142246" speed="5">
+                    <frame duration="1" hotspotX="0.43985" hotspotY="0.474684" original-source="C:\Users\eddie_000\Documents\pws\alle 3 de vijanden zonder achtergrond.png">
+                        <image-point name="Imagepoint 1" x="0.612782" y="0.626582" />
+                        <collision-poly>
+                            <point x="0.0488726" y="0.177215" />
+                            <point x="0" y="0.588608" />
+                            <point x="0.124061" y="0.924051" />
+                            <point x="0.296993" y="1" />
+                            <point x="0.492482" y="0.892405" />
+                            <point x="0.586466" y="0.718355" />
+                            <point x="0.595864" y="0.621836" />
+                            <point x="0.604323" y="0.415348" />
+                            <point x="0.510808" y="0.131725" />
+                            <point x="0.266917" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="248714368145367">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="339953654054096" speed="5">
+                    <frame duration="1" hotspotX="0.500266" hotspotY="0.5" original-source="C:\Users\eddie_000\Documents\pws\alle 3 de vijanden.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemyrifle" sid="305731862451466">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="457530427257316" speed="5">
+                    <frame duration="1" hotspotX="0.308" hotspotY="0.420455" original-source="C:\Users\eddie_000\Documents\pws\alle 3 de vijanden zonder achtergrond.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="543156856137309">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="waarenemyshotgunstond" sid="877177456140358">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="792872634140130" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pinnen" sid="288684756738395">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="827081281886314" speed="5">
+                    <frame duration="1" hotspotX="0.517766" hotspotY="0.714286" original-source="C:\Users\eddie_000\Documents\pws\ijzer pinnen.png" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

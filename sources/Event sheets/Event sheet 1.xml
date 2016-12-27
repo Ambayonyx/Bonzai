@@ -30,7 +30,15 @@
                 <condition id="-1" name="Every tick" sid="137400561439665" type="System" />
             </conditions>
             <actions>
-                <action id="-22" name="Set angle toward position" sid="724781032854715" type="enemy">
+                <action id="-22" name="Set angle toward position" sid="202960138325765" type="enemy">
+                    <param id="0" name="X">player.X</param>
+                    <param id="1" name="Y">player.Y</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="759637897323276" type="player">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="724781032854715" type="enemyshotgun">
                     <param id="0" name="X">player.X</param>
                     <param id="1" name="Y">player.Y</param>
                 </action>
@@ -40,11 +48,6 @@
             <conditions>
                 <condition id="0" name="On collision with another object" sid="710385094698263" type="kogel">
                     <param id="0" name="Object">player</param>
-                </condition>
-                <condition id="-7" name="Compare instance variable" sid="525647007688192" type="kogel">
-                    <param id="0" name="Instance variable">afkomst</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
             <actions>
@@ -57,7 +60,13 @@
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="Image point">0</param>
                 </action>
+                <action id="0" name="Spawn another object" sid="138104382789205" type="waarenemyshotgunstond">
+                    <param id="0" name="Object">enemyshotgun</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
                 <action id="-9" name="Destroy" sid="408463128133182" type="waarEnemyStond" />
+                <action id="-9" name="Destroy" sid="370274696365496" type="waarenemyshotgunstond" />
                 <action id="-9" name="Destroy" sid="838001304788296" type="kogel" />
             </actions>
         </event-block>
@@ -122,17 +131,6 @@
                 <action id="-23" name="Move at angle" sid="378141840376538" type="player">
                     <param id="0" name="Angle">270</param>
                     <param id="1" name="Distance">100</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="709067251896979">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="525086607012025" type="System" />
-            </conditions>
-            <actions>
-                <action id="-22" name="Set angle toward position" sid="759637897323276" type="player">
-                    <param id="0" name="X">Mouse.X</param>
-                    <param id="1" name="Y">Mouse.Y</param>
                 </action>
             </actions>
         </event-block>
@@ -219,6 +217,9 @@
                 <condition id="1" name="Is overlapping another object" sid="499506331793197" type="kogel">
                     <param id="0" name="Object">offscreen</param>
                 </condition>
+                <condition id="1" name="Is overlapping another object" sid="106229947673461" type="kogel">
+                    <param id="0" name="Object">pinnen</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="464925474594518" type="kogel" />
@@ -254,6 +255,7 @@
                     <param id="1" name="Y">player.Y</param>
                 </action>
                 <action id="-9" name="Destroy" sid="735712370409660" type="waarEnemyStond" />
+                <action id="-9" name="Destroy" sid="844999582948436" type="waarenemyshotgunstond" />
             </actions>
         </event-block>
         <event-block sid="968110028346040">
@@ -287,22 +289,165 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="674160778495155">
+        <event-block sid="369856710331302">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="698230304586270" type="player">
-                    <param id="0" name="Object">checkpoint</param>
+                <condition id="0" name="On collision with another object" sid="483986755126416" type="player">
+                    <param id="0" name="Object">levelportal</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-10" name="Set value" sid="740572223038348" type="player">
-                    <param id="0" name="Instance variable">checkpointX</param>
-                    <param id="1" name="Value">player.X</param>
+                <action id="-3" name="Set position" sid="376349948112146" type="player">
+                    <param id="0" name="X">player.X + 1200</param>
+                    <param id="1" name="Y">player.Y + 2300</param>
                 </action>
-                <action id="-10" name="Set value" sid="736645258490317" type="player">
-                    <param id="0" name="Instance variable">checkpointY</param>
-                    <param id="1" name="Value">player.Y</param>
+                <action id="-3" name="Set position" sid="144734500152319" type="checkpoint">
+                    <param id="0" name="X">player.X</param>
+                    <param id="1" name="Y">player.Y</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="736264695658410">
+            <conditions>
+                <condition behavior="Turret" id="0" name="Has target" sid="506062842483555" type="enemyshotgun" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="575851997085749" type="Audio">
+                    <param id="0" name="Audio file">schietgeluid</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="Turret" id="2" name="Clear targets" sid="607061040879773" type="enemyshotgun" />
+            </actions>
+        </event-block>
+        <event-block sid="254339363547556">
+            <conditions>
+                <condition id="-13" name="Is between angles" sid="156647061756537" type="enemyshotgun">
+                    <param id="0" name="First angle">90</param>
+                    <param id="1" name="Second angle">270</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Set flipped" sid="601382327471459" type="enemyshotgun">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="505174462971224">
+            <conditions>
+                <condition id="-13" name="Is between angles" sid="140543509248417" type="enemyshotgun">
+                    <param id="0" name="First angle">270</param>
+                    <param id="1" name="Second angle">450</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Set flipped" sid="787789886440030" type="enemyshotgun">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="618928421894939">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="270326602065379" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+                <condition id="-3" name="Is on-screen" sid="518976137171855" type="enemyshotgun" />
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="835141368170633" type="enemyshotgun">
+                    <param id="0" name="Object">obstakel</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="198443216769533" type="enemyshotgun">
+                    <param id="0" name="Object">kogel</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-18" name="Rotate clockwise" sid="396215237928502" type="kogel">
+                    <param id="0" name="Degrees">random(350, 370)</param>
+                </action>
+                <action id="-10" name="Set value" sid="579360070258425" type="kogel">
+                    <param id="0" name="Instance variable">afkomst</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="572772004179191" type="enemyshotgun">
+                    <param id="0" name="Object">kogel</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-18" name="Rotate clockwise" sid="901398039682769" type="kogel">
+                    <param id="0" name="Degrees">random(350, 370)</param>
+                </action>
+                <action id="-10" name="Set value" sid="784997877450601" type="kogel">
+                    <param id="0" name="Instance variable">afkomst</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="915279041451071" type="enemyshotgun">
+                    <param id="0" name="Object">kogel</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-18" name="Rotate clockwise" sid="969422644905766" type="kogel">
+                    <param id="0" name="Degrees">random(350, 370)</param>
+                </action>
+                <action id="-10" name="Set value" sid="507752703177550" type="kogel">
+                    <param id="0" name="Instance variable">afkomst</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action behavior="Turret" id="0" name="Acquire target" sid="380074623359958" type="enemyshotgun">
+                    <param id="0" name="Target">player</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="466957541374965">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="833989022264522" type="kogel">
+                    <param id="0" name="Object">enemyshotgun</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="599719917948098" type="kogel">
+                    <param id="0" name="Instance variable">afkomst</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="651828783598206" type="enemyshotgun" />
+                <action id="0" name="Spawn another object" sid="157124545185396" type="enemyshotgun">
+                    <param id="0" name="Object">waarenemyshotgunstond</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="256657005566980" type="kogel" />
+            </actions>
+        </event-block>
+        <event-block sid="283941129499364">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="707682767674188" type="player">
+                    <param id="0" name="Object">pinnen</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="543539069692859" type="player">
+                    <param id="0" name="Object">checkpoint</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="511393840474113" type="waarEnemyStond">
+                    <param id="0" name="Object">enemy</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="230663828433668" type="waarenemyshotgunstond">
+                    <param id="0" name="Object">enemyshotgun</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="847109951029238" type="waarEnemyStond" />
+                <action id="-9" name="Destroy" sid="440242717410978" type="waarenemyshotgunstond" />
+                <action id="-9" name="Destroy" sid="723558871284558" type="kogel" />
+            </actions>
+        </event-block>
+        <event-block sid="638313706899068">
+            <conditions />
+            <actions />
         </event-block>
     </events>
 </c2eventsheet>
