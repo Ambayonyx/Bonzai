@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
     <name>Layout 2</name>
-    <sid>941063969970149</sid>
+    <sid>256786727351651</sid>
     <event-sheet>Event sheet 2</event-sheet>
     <size>
         <width>1708</width>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="692106224281977">
+        <layer name="Layer 0" sid="598879068228556">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite6" uid="350">
+                <instance type="INTRO6" uid="44">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -39,11 +39,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>704</x>
-                        <y>237</y>
+                        <x>705</x>
+                        <y>242</y>
                         <z>0</z>
-                        <width>1407</width>
-                        <height>486</height>
+                        <width>1410</width>
+                        <height>487</height>
                         <depth>0</depth>
                         <hotspotX>0.500266373</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite7" uid="351">
+                <instance type="INTRO5" uid="349">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -61,11 +61,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>704</x>
-                        <y>237</y>
+                        <x>705</x>
+                        <y>242</y>
                         <z>0</z>
-                        <width>1407</width>
-                        <height>486</height>
+                        <width>1410</width>
+                        <height>487</height>
                         <depth>0</depth>
                         <hotspotX>0.500266373</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -73,7 +73,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite8" uid="352">
+                <instance type="INTRO4" uid="350">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -83,11 +83,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>704</x>
-                        <y>237</y>
+                        <x>705</x>
+                        <y>242</y>
                         <z>0</z>
-                        <width>1407</width>
-                        <height>486</height>
+                        <width>1410</width>
+                        <height>487</height>
                         <depth>0</depth>
                         <hotspotX>0.500266373</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -95,7 +95,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite10" uid="353">
+                <instance type="INTRO3" uid="351">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -105,11 +105,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>704</x>
-                        <y>237</y>
+                        <x>646</x>
+                        <y>242</y>
                         <z>0</z>
-                        <width>1407</width>
-                        <height>486</height>
+                        <width>1410</width>
+                        <height>487</height>
                         <depth>0</depth>
                         <hotspotX>0.500266373</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -117,7 +117,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite5" uid="349">
+                <instance type="INTRO2" uid="352">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -127,11 +127,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>505</x>
-                        <y>237</y>
+                        <x>553</x>
+                        <y>242</y>
                         <z>0</z>
-                        <width>1407</width>
-                        <height>486</height>
+                        <width>1410</width>
+                        <height>487</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -139,7 +139,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite" uid="44">
+                <instance type="INTRO1" uid="353">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -150,12 +150,12 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>690</x>
-                        <y>234</y>
+                        <y>242</y>
                         <z>0</z>
-                        <width>1080</width>
-                        <height>512</height>
+                        <width>1410</width>
+                        <height>487</height>
                         <depth>0</depth>
-                        <hotspotX>0.65459609</hotspotX>
+                        <hotspotX>0.500266373</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>

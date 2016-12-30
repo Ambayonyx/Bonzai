@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>SpelToestand</name>
+    <events>
+        <variable comment="Dit gebruiken we om bij de intro en aftiteling plaatjes te tonen.Een speciale toestand is SPEL=1000, Intro plaatjes 1..99 aftitelingplaatjes 101-199" constant="0" name="SPELTOESTAND" sid="858572765877493" static="0" type="number">0</variable>
+        <variable constant="1" name="ST_BEGIN" sid="901943826991484" static="0" type="number">0</variable>
+        <variable constant="1" name="ST_INTRO_IMG_1" sid="864836576414381" static="0" type="number">1</variable>
+        <variable constant="1" name="ST_INTRO_IMG_2" sid="902993896355743" static="0" type="number">2</variable>
+        <variable constant="1" name="ST_INTRO_IMG_3" sid="542202581204904" static="0" type="number">3</variable>
+        <variable constant="1" name="ST_INTRO_IMG_4" sid="192286983845260" static="0" type="number">4</variable>
+        <variable constant="1" name="ST_INTRO_IMG_5" sid="626435925997924" static="0" type="number">5</variable>
+        <variable constant="1" name="ST_INTRO_IMG_6" sid="443552441447258" static="0" type="number">6</variable>
+        <variable constant="1" name="ST_SPEL" sid="468936198946215" static="0" type="number">1000</variable>
+        <variable constant="1" name="ST_OUTRO_IMG_1" sid="892843129074039" static="0" type="number">101</variable>
+        <variable constant="1" name="ST_OUTRO_IMG_2" sid="228316379795990" static="0" type="number">102</variable>
+    </events>
+</c2eventsheet>

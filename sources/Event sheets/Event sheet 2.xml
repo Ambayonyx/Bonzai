@@ -3,111 +3,173 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 2</name>
     <events>
-        <event-block sid="159029851981296">
+        <comment>De speltoestanden MOETEN in omgekeerde volgorde afgehandeld worden omdat de LeftButton.Click altijd clicked blijft bij de volgende evaluatie.</comment>
+        <event-block sid="111335519331269">
             <conditions>
-                <condition id="6" name="On object clicked" sid="105558882735395" type="Mouse">
+                <condition id="0" name="On click" sid="367652224773380" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">Sprite</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="902788254777534" type="System">
+                    <param id="0" name="Variable">SPELTOESTAND</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">ST_INTRO_IMG_6</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="730682092848143" type="Sprite" />
-                <action id="-3" name="Create object" sid="158798126023135" type="System">
-                    <param id="0" name="Object to create">Sprite5</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">505</param>
-                    <param id="3" name="Y">237</param>
+                <action id="-9" name="Set value" sid="596500617564795" type="System">
+                    <param id="0" name="Variable">SPELTOESTAND</param>
+                    <param id="1" name="Value">ST_SPEL</param>
+                </action>
+                <action id="-15" name="Set visible" sid="247828062635243" type="INTRO6">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="154775365476399" type="System">
+                    <param id="0" name="Layout">Layout 3</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="926730470184370">
+        <event-block sid="213972311164889">
             <conditions>
-                <condition id="6" name="On object clicked" sid="121893777262085" type="Mouse">
+                <condition id="0" name="On click" sid="429765889156425" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">Sprite5</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="219579602445705" type="System">
+                    <param id="0" name="Variable">SPELTOESTAND</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">ST_INTRO_IMG_5</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="519593564046901" type="Sprite5" />
-                <action id="-3" name="Create object" sid="308650621962136" type="System">
-                    <param id="0" name="Object to create">Sprite10</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">505</param>
-                    <param id="3" name="Y">237</param>
+                <action id="-9" name="Set value" sid="772829742044528" type="System">
+                    <param id="0" name="Variable">SPELTOESTAND</param>
+                    <param id="1" name="Value">ST_INTRO_IMG_6</param>
+                </action>
+                <action id="-15" name="Set visible" sid="808690771834180" type="INTRO5">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="902022028828090" type="INTRO6">
+                    <param id="0" name="Visibility">1</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="436366000185198">
+        <event-block sid="398126591617062">
             <conditions>
-                <condition id="6" name="On object clicked" sid="266212468701317" type="Mouse">
+                <condition id="0" name="On click" sid="588956422045966" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">Sprite10</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="805739860521432" type="System">
+                    <param id="0" name="Variable">SPELTOESTAND</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">ST_INTRO_IMG_4</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="811696076264872" type="Sprite10" />
-                <action id="-3" name="Create object" sid="116391097443998" type="System">
-                    <param id="0" name="Object to create">Sprite6</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">505</param>
-                    <param id="3" name="Y">237</param>
+                <action id="-9" name="Set value" sid="496477158654523" type="System">
+                    <param id="0" name="Variable">SPELTOESTAND</param>
+                    <param id="1" name="Value">ST_INTRO_IMG_5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="812690510456248" type="INTRO4">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="789240929399591" type="INTRO5">
+                    <param id="0" name="Visibility">1</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="692143246067166">
+        <event-block sid="598750539031786">
             <conditions>
-                <condition id="6" name="On object clicked" sid="135437596056519" type="Mouse">
+                <condition id="0" name="On click" sid="445027867673542" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">Sprite6</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="849357344742163" type="System">
+                    <param id="0" name="Variable">SPELTOESTAND</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">ST_INTRO_IMG_3</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="122457187536451" type="Sprite6" />
-                <action id="-3" name="Create object" sid="213159832103354" type="System">
-                    <param id="0" name="Object to create">Sprite7</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">505</param>
-                    <param id="3" name="Y">237</param>
+                <action id="-9" name="Set value" sid="983867020363455" type="System">
+                    <param id="0" name="Variable">SPELTOESTAND</param>
+                    <param id="1" name="Value">ST_INTRO_IMG_4</param>
+                </action>
+                <action id="-15" name="Set visible" sid="970296379909542" type="INTRO3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="615929396297413" type="INTRO4">
+                    <param id="0" name="Visibility">1</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="280977440598854">
+        <event-block sid="102066967639896">
             <conditions>
-                <condition id="6" name="On object clicked" sid="449507826917589" type="Mouse">
+                <condition id="0" name="On click" sid="305505402878017" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">Sprite7</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="109372492991509" type="System">
+                    <param id="0" name="Variable">SPELTOESTAND</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">ST_INTRO_IMG_2</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="263409455230712" type="Sprite7" />
-                <action id="-3" name="Create object" sid="780121790906369" type="System">
-                    <param id="0" name="Object to create">Sprite8</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">505</param>
-                    <param id="3" name="Y">237</param>
+                <action id="-9" name="Set value" sid="233713279434722" type="System">
+                    <param id="0" name="Variable">SPELTOESTAND</param>
+                    <param id="1" name="Value">ST_INTRO_IMG_3</param>
+                </action>
+                <action id="-15" name="Set visible" sid="242426440596171" type="INTRO2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="700227375826923" type="INTRO3">
+                    <param id="0" name="Visibility">1</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="962314008010880">
+        <event-block sid="309410952137746">
             <conditions>
-                <condition id="6" name="On object clicked" sid="153822472338658" type="Mouse">
+                <condition id="0" name="On click" sid="387693146653131" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">Sprite8</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="166713728835797" type="System">
+                    <param id="0" name="Variable">SPELTOESTAND</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">ST_INTRO_IMG_1</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="710534782036269" type="Sprite8" />
-                <action id="-3" name="Create object" sid="113861149700705" type="System">
-                    <param id="0" name="Object to create">Sprite5</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">505</param>
-                    <param id="3" name="Y">237</param>
+                <action id="-9" name="Set value" sid="670610315191076" type="System">
+                    <param id="0" name="Variable">SPELTOESTAND</param>
+                    <param id="1" name="Value">ST_INTRO_IMG_2</param>
+                </action>
+                <action id="-15" name="Set visible" sid="535758509828840" type="INTRO1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="960949955510444" type="INTRO2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="131478938560381">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="707623138959129" type="System">
+                    <param id="0" name="Variable">SPELTOESTAND</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">ST_BEGIN</param>
+                </condition>
+                <condition id="-1" name="Every tick" sid="296862958975925" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="808497582418754" type="System">
+                    <param id="0" name="Variable">SPELTOESTAND</param>
+                    <param id="1" name="Value">ST_INTRO_IMG_1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="328019568032912" type="INTRO1">
+                    <param id="0" name="Visibility">1</param>
                 </action>
             </actions>
         </event-block>
