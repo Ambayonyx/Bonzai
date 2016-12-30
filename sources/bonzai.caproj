@@ -423,15 +423,138 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite11" sid="651942777869824">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="122237469740874" speed="5">
+                    <frame duration="1" hotspotX="0.356" hotspotY="0.508" original-source="C:\Users\Algemeen\Google Drive\GameDevelopmentStrabrecht\foto&apos;s\begin van de game.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite12" sid="576673160320542">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="282454001122946" speed="5">
+                    <frame duration="1" hotspotX="0.500266" hotspotY="0.5" original-source="C:\Users\Algemeen\Google Drive\GameDevelopmentStrabrecht\foto&apos;s\begin van de game.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite13" sid="555010489232221">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="199583744643922" speed="5">
+                    <frame duration="1" hotspotX="0.500266" hotspotY="0.5" original-source="C:\Users\Algemeen\Google Drive\GameDevelopmentStrabrecht\foto&apos;s\begin 5.1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite14" sid="252382093894308">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="325202891078946" speed="5">
+                    <frame duration="1" hotspotX="0.500266" hotspotY="0.5" original-source="C:\Users\Algemeen\Google Drive\GameDevelopmentStrabrecht\foto&apos;s\begin 4.1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite15" sid="601461824330157">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="174643644873122" speed="5">
+                    <frame duration="1" hotspotX="0.500266" hotspotY="0.5" original-source="C:\Users\Algemeen\Google Drive\GameDevelopmentStrabrecht\foto&apos;s\begin 3.1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite16" sid="831562882847738">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="698012425417357" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Algemeen\Google Drive\GameDevelopmentStrabrecht\foto&apos;s\begin 2.1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite17" sid="653701233596216">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="495185760721030" speed="5">
+                    <frame duration="1" hotspotX="0.500266" hotspotY="0.5" original-source="C:\Users\Algemeen\Google Drive\GameDevelopmentStrabrecht\foto&apos;s\begin 1.2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="INTRO6" sid="294012646210880">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="527259601269292" speed="5">
+                    <frame duration="1" hotspotX="0.500266" hotspotY="0.5" original-source="C:\Users\Algemeen\Google Drive\GameDevelopmentStrabrecht\foto&apos;s\begin van de game.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="INTRO5" sid="421999959753630">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="283728002526429" speed="5">
+                    <frame duration="1" hotspotX="0.500266" hotspotY="0.5" original-source="C:\Users\Algemeen\Google Drive\GameDevelopmentStrabrecht\foto&apos;s\begin 5.1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="INTRO4" sid="881483279420457">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="400749707703684" speed="5">
+                    <frame duration="1" hotspotX="0.500266" hotspotY="0.5" original-source="C:\Users\Algemeen\Google Drive\GameDevelopmentStrabrecht\foto&apos;s\begin 4.1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="INTRO3" sid="577128611826612">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="570006882598774" speed="5">
+                    <frame duration="1" hotspotX="0.500266" hotspotY="0.5" original-source="C:\Users\Algemeen\Google Drive\GameDevelopmentStrabrecht\foto&apos;s\begin 3.1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="INTRO2" sid="609212444111681">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="590712129501179" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Algemeen\Google Drive\GameDevelopmentStrabrecht\foto&apos;s\begin 2.1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="INTRO1" sid="234848470817228">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="474120216049956" speed="5">
+                    <frame duration="1" hotspotX="0.500266" hotspotY="0.5" original-source="C:\Users\Algemeen\Google Drive\GameDevelopmentStrabrecht\foto&apos;s\begin 1.2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="OUTRO1" sid="589810305159772">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="424991966573584" speed="5">
+                    <frame duration="1" hotspotX="0.500266" hotspotY="0.5" original-source="C:\Users\Algemeen\Google Drive\GameDevelopmentStrabrecht\foto&apos;s\einde 1.1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="OUTRO2" sid="637634275232750">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="302385913711797" speed="5">
+                    <frame duration="1" hotspotX="0.500266" hotspotY="0.5" original-source="C:\Users\Algemeen\Google Drive\GameDevelopmentStrabrecht\foto&apos;s\einde 2.1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
         <layout>Layout 2.xml</layout>
+        <layout>Layout 3.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>Event sheet 3.xml</event-sheet>
+        <event-sheet>SpelToestand.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="1" />
