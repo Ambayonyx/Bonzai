@@ -209,7 +209,14 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="117836587536151" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.342857" hotspotY="0.563253" original-source="C:\Users\eddie_000\Documents\pws\portal deur.png">
+                        <collision-poly>
+                            <point x="0.337143" y="0.00301205" />
+                            <point x="0.994286" y="0.563253" />
+                            <point x="0.337143" y="0.996988" />
+                            <point x="0.00571429" y="0.563253" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -278,7 +285,14 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="626836140840330" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.342857" hotspotY="0.563253" original-source="C:\Users\eddie_000\Documents\pws\portal deur.png">
+                        <collision-poly>
+                            <point x="0.337143" y="0.00301205" />
+                            <point x="0.994286" y="0.563253" />
+                            <point x="0.337143" y="0.996988" />
+                            <point x="0.00571429" y="0.563253" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -315,7 +329,7 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="214515033142246" speed="5">
                     <frame duration="1" hotspotX="0.43985" hotspotY="0.474684" original-source="C:\Users\eddie_000\Documents\pws\alle 3 de vijanden zonder achtergrond.png">
-                        <image-point name="Imagepoint 1" x="0.612782" y="0.626582" />
+                        <image-point name="Imagepoint 1" x="0.612782" y="0.670886" />
                         <collision-poly>
                             <point x="0.0488726" y="0.177215" />
                             <point x="0" y="0.588608" />

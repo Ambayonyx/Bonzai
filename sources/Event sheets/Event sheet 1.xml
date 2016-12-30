@@ -16,12 +16,15 @@
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="Image point">1</param>
                 </action>
-                <action behavior="Turret" id="0" name="Acquire target" sid="789226623988256" type="enemy">
-                    <param id="0" name="Target">player</param>
-                </action>
                 <action id="-10" name="Set value" sid="162823706562537" type="kogel">
                     <param id="0" name="Instance variable">afkomst</param>
                     <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="840420176177453" type="Audio">
+                    <param id="0" name="Audio file">schietgeluid</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -44,30 +47,39 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="916733572451658">
+        <event-block any="1" sid="283941129499364">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="710385094698263" type="kogel">
+                <condition id="0" name="On collision with another object" sid="707682767674188" type="player">
+                    <param id="0" name="Object">pinnen</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="619487801369981" type="kogel">
                     <param id="0" name="Object">player</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="943078230450961" type="player">
+                    <param id="0" name="Object">enemy</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="508994961457065" type="player">
+                    <param id="0" name="Object">enemyshotgun</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-4" name="Set position to another object" sid="580194734982524" type="player">
+                <action id="-4" name="Set position to another object" sid="543539069692859" type="player">
                     <param id="0" name="Object">checkpoint</param>
                     <param id="1" name="Image point (optional)">0</param>
                 </action>
-                <action id="0" name="Spawn another object" sid="831007937883345" type="waarEnemyStond">
+                <action id="0" name="Spawn another object" sid="511393840474113" type="waarEnemyStond">
                     <param id="0" name="Object">enemy</param>
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="Image point">0</param>
                 </action>
-                <action id="0" name="Spawn another object" sid="138104382789205" type="waarenemyshotgunstond">
+                <action id="0" name="Spawn another object" sid="230663828433668" type="waarenemyshotgunstond">
                     <param id="0" name="Object">enemyshotgun</param>
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="Image point">0</param>
                 </action>
-                <action id="-9" name="Destroy" sid="408463128133182" type="waarEnemyStond" />
-                <action id="-9" name="Destroy" sid="370274696365496" type="waarenemyshotgunstond" />
-                <action id="-9" name="Destroy" sid="838001304788296" type="kogel" />
+                <action id="-9" name="Destroy" sid="847109951029238" type="waarEnemyStond" />
+                <action id="-9" name="Destroy" sid="440242717410978" type="waarenemyshotgunstond" />
+                <action id="-9" name="Destroy" sid="723558871284558" type="kogel" />
             </actions>
         </event-block>
         <event-block sid="978334238952298">
@@ -220,23 +232,12 @@
                 <condition id="1" name="Is overlapping another object" sid="106229947673461" type="kogel">
                     <param id="0" name="Object">pinnen</param>
                 </condition>
+                <condition id="1" name="Is overlapping another object" sid="704436935439971" type="kogel">
+                    <param id="0" name="Object">buitenLayout</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="464925474594518" type="kogel" />
-            </actions>
-        </event-block>
-        <event-block sid="560272752801445">
-            <conditions>
-                <condition behavior="Turret" id="0" name="Has target" sid="951055282302526" type="enemy" />
-            </conditions>
-            <actions>
-                <action id="0" name="Play" sid="840420176177453" type="Audio">
-                    <param id="0" name="Audio file">schietgeluid</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-                <action behavior="Turret" id="2" name="Clear targets" sid="819154226845835" type="enemy" />
             </actions>
         </event-block>
         <event-block sid="694486859672570">
@@ -304,20 +305,6 @@
                     <param id="0" name="X">player.X</param>
                     <param id="1" name="Y">player.Y</param>
                 </action>
-            </actions>
-        </event-block>
-        <event-block sid="736264695658410">
-            <conditions>
-                <condition behavior="Turret" id="0" name="Has target" sid="506062842483555" type="enemyshotgun" />
-            </conditions>
-            <actions>
-                <action id="0" name="Play" sid="575851997085749" type="Audio">
-                    <param id="0" name="Audio file">schietgeluidzwaar</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-                <action behavior="Turret" id="2" name="Clear targets" sid="607061040879773" type="enemyshotgun" />
             </actions>
         </event-block>
         <event-block sid="254339363547556">
@@ -393,8 +380,11 @@
                     <param id="0" name="Instance variable">afkomst</param>
                     <param id="1" name="Value">3</param>
                 </action>
-                <action behavior="Turret" id="0" name="Acquire target" sid="380074623359958" type="enemyshotgun">
-                    <param id="0" name="Target">player</param>
+                <action id="0" name="Play" sid="575851997085749" type="Audio">
+                    <param id="0" name="Audio file">schietgeluidzwaar</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -418,36 +408,6 @@
                 </action>
                 <action id="-9" name="Destroy" sid="256657005566980" type="kogel" />
             </actions>
-        </event-block>
-        <event-block sid="283941129499364">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="707682767674188" type="player">
-                    <param id="0" name="Object">pinnen</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-4" name="Set position to another object" sid="543539069692859" type="player">
-                    <param id="0" name="Object">checkpoint</param>
-                    <param id="1" name="Image point (optional)">0</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="511393840474113" type="waarEnemyStond">
-                    <param id="0" name="Object">enemy</param>
-                    <param id="1" name="Layer">1</param>
-                    <param id="2" name="Image point">0</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="230663828433668" type="waarenemyshotgunstond">
-                    <param id="0" name="Object">enemyshotgun</param>
-                    <param id="1" name="Layer">1</param>
-                    <param id="2" name="Image point">0</param>
-                </action>
-                <action id="-9" name="Destroy" sid="847109951029238" type="waarEnemyStond" />
-                <action id="-9" name="Destroy" sid="440242717410978" type="waarenemyshotgunstond" />
-                <action id="-9" name="Destroy" sid="723558871284558" type="kogel" />
-            </actions>
-        </event-block>
-        <event-block sid="638313706899068">
-            <conditions />
-            <actions />
         </event-block>
     </events>
 </c2eventsheet>
