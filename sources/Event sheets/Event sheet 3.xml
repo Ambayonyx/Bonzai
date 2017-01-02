@@ -4,6 +4,27 @@
     <name>Event sheet 3</name>
     <events>
         <comment>De speltoestanden MOETEN in omgekeerde volgorde afgehandeld worden omdat de LeftButton.Click altijd clicked blijft bij de volgende evaluatie.</comment>
+        <event-block sid="760443134711327">
+            <conditions>
+                <condition id="0" name="On click" sid="998105537292102" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="975219034935717" type="System">
+                    <param id="0" name="Variable">SPELTOESTAND</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">ST_AFTITELING_IMG_1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="505646033051180" type="System">
+                    <param id="0" name="Layout">Layout 4</param>
+                </action>
+                <action id="-15" name="Set visible" sid="821042128139114" type="AFTITELING1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="441390385842108">
             <conditions>
                 <condition id="0" name="On click" sid="479994156553557" type="Mouse">
@@ -13,16 +34,19 @@
                 <condition id="-14" name="Compare variable" sid="127551752708515" type="System">
                     <param id="0" name="Variable">SPELTOESTAND</param>
                     <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">ST_INTRO_IMG_2</param>
+                    <param id="2" name="Value">ST_OUTRO_IMG_2</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-9" name="Set value" sid="314019852721679" type="System">
                     <param id="0" name="Variable">SPELTOESTAND</param>
-                    <param id="1" name="Value">ST_SPEL</param>
+                    <param id="1" name="Value">ST_AFTITELING_IMG_1</param>
                 </action>
                 <action id="-15" name="Set visible" sid="565818687903756" type="OUTRO2">
                     <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="785440040424686" type="AFTITELING1">
+                    <param id="0" name="Visibility">1</param>
                 </action>
             </actions>
         </event-block>
@@ -39,15 +63,15 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-9" name="Set value" sid="831762480830464" type="System">
+                    <param id="0" name="Variable">SPELTOESTAND</param>
+                    <param id="1" name="Value">ST_OUTRO_IMG_2</param>
+                </action>
                 <action id="-15" name="Set visible" sid="174826519650163" type="OUTRO1">
                     <param id="0" name="Visibility">0</param>
                 </action>
                 <action id="-15" name="Set visible" sid="533672870922966" type="OUTRO2">
                     <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-9" name="Set value" sid="831762480830464" type="System">
-                    <param id="0" name="Variable">SPELTOESTAND</param>
-                    <param id="1" name="Value">ST_OUTRO_IMG_2</param>
                 </action>
             </actions>
         </event-block>

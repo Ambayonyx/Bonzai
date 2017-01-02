@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="OUTRO2" uid="354">
+                <instance type="AFTITELING1" uid="670">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -51,7 +51,29 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="OUTRO1" uid="355">
+                <instance type="OUTRO2" uid="1">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>705</x>
+                        <y>242</y>
+                        <z>0</z>
+                        <width>1410</width>
+                        <height>487</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500266373</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="OUTRO1" uid="8">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
