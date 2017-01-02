@@ -14,5 +14,6 @@
         <variable constant="1" name="ST_SPEL" sid="468936198946215" static="0" type="number">1000</variable>
         <variable constant="1" name="ST_OUTRO_IMG_1" sid="892843129074039" static="0" type="number">101</variable>
         <variable constant="1" name="ST_OUTRO_IMG_2" sid="228316379795990" static="0" type="number">102</variable>
+        <variable constant="1" name="ST_AFTITELING_IMG_1" sid="748863612471493" static="0" type="number">103</variable>
     </events>
 </c2eventsheet>

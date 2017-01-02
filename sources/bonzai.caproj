@@ -11,9 +11,11 @@
     <saved-with-version>23900</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
@@ -570,6 +572,7 @@
                 </animation>
             </animation-folder>
         </object-type>
+<<<<<<< HEAD
         <object-type name="laser" sid="452277944632910">
             <plugin id="Sprite" />
             <instance-variables>
@@ -604,18 +607,60 @@
                 </animation>
             </animation-folder>
         </object-type>
+=======
+        <object-type name="AFTITELING1" sid="161916634061561">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="301423361440438" speed="5">
+                    <frame duration="1" hotspotX="0.500266" hotspotY="0.5" original-source="C:\Users\Algemeen\Google Drive\GameDevelopmentStrabrecht\foto&apos;s\aftiteling.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="achtergrondMenu" sid="473363863047219">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="399152095928624" speed="5">
+                    <frame duration="1" hotspotX="0.500266" hotspotY="0.5" original-source="C:\Users\Algemeen\Google Drive\GameDevelopmentStrabrecht\foto&apos;s\menu achtergrond.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="startButton" sid="329632556491924">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="START" sid="939671533057210">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="DEHANDLEIDING" sid="608060807744762">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Handleiding" sid="612059458491313">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="129081351645868" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Algemeen\Google Drive\GameDevelopmentStrabrecht\foto&apos;s\Handleiding.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MENU" sid="389272631736788">
+            <plugin id="Text" />
+        </object-type>
+>>>>>>> 32fb98d32061d324f75a4d248ebad65e18b145f5
     </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
         <layout>Layout 2.xml</layout>
         <layout>Layout 3.xml</layout>
+        <layout>Layout 4.xml</layout>
+        <layout>Layout 5.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>Event sheet 2.xml</event-sheet>
         <event-sheet>Event sheet 3.xml</event-sheet>
         <event-sheet>SpelToestand.xml</event-sheet>
+        <event-sheet>Event sheet 4.xml</event-sheet>
+        <event-sheet>Event sheet 5.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="9" />
@@ -639,8 +684,12 @@
         <file name="schietgeluid.ogg" />
         <file name="schietgeluidsnel.ogg" />
         <file name="schietgeluidzwaar.ogg" />
+<<<<<<< HEAD
         <file name="01 - Track 1.m4a" />
         <file name="01 - Track 1.ogg" />
+=======
+        <file name="CHT2_Cinematic_Transition_101.ogg" />
+>>>>>>> 32fb98d32061d324f75a4d248ebad65e18b145f5
     </sounds-folder>
     <music-folder />
     <files-folder>
