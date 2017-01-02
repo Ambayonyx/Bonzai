@@ -29,11 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-<<<<<<< HEAD
-                <instance type="OUTRO2" uid="1">
-=======
                 <instance type="AFTITELING1" uid="670">
->>>>>>> 32fb98d32061d324f75a4d248ebad65e18b145f5
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -55,8 +51,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-<<<<<<< HEAD
-=======
                 <instance type="OUTRO2" uid="1">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -79,7 +73,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
->>>>>>> 32fb98d32061d324f75a4d248ebad65e18b145f5
                 <instance type="OUTRO1" uid="8">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
