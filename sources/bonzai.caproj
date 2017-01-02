@@ -356,14 +356,27 @@
         </object-type>
         <object-type name="enemyrifle" sid="305731862451466">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Turret" sid="621848293802737">
+                    <behavior id="Turret" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="792132794936828">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="457530427257316" speed="5">
                     <frame duration="1" hotspotX="0.308" hotspotY="0.420455" original-source="C:\Users\eddie_000\Documents\pws\alle 3 de vijanden zonder achtergrond.png">
+                        <image-point name="Imagepoint 1" x="0.74" y="0.6875" />
                         <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="1" y="1" />
+                            <point x="0.552" y="0.880682" />
+                            <point x="0.645" y="0.644531" />
+                            <point x="0.574" y="0.277699" />
+                            <point x="0.324" y="0.0838068" />
+                            <point x="0.064" y="0.235795" />
+                            <point x="0" y="0.5625" />
+                            <point x="0.064" y="0.846591" />
+                            <point x="0.308" y="1" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -557,6 +570,40 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="laser" sid="452277944632910">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="richting" sid="698096114818388" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="756779009829466" speed="5">
+                    <frame duration="1" hotspotX="0.0015456" hotspotY="0.5" original-source="C:\Users\eddie_000\Documents\pws\laser.png">
+                        <image-point name="Imagepoint 1" x="1" y="0.5" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lasershot" sid="997971347217418">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="536148420683834">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="210040685597989" speed="5">
+                    <frame duration="1" hotspotX="0.0015456" hotspotY="0.5" original-source="C:\Users\eddie_000\Documents\pws\laser.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="waarenemyriflestond" sid="961660668681902">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="276111369730207" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -571,9 +618,9 @@
         <event-sheet>SpelToestand.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="1" />
-        <global-instance type="Mouse" uid="9" />
-        <global-instance type="Audio" uid="8">
+        <global-instance type="Keyboard" uid="9" />
+        <global-instance type="Mouse" uid="668" />
+        <global-instance type="Audio" uid="669">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -592,6 +639,8 @@
         <file name="schietgeluid.ogg" />
         <file name="schietgeluidsnel.ogg" />
         <file name="schietgeluidzwaar.ogg" />
+        <file name="01 - Track 1.m4a" />
+        <file name="01 - Track 1.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>

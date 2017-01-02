@@ -45,6 +45,10 @@
                     <param id="0" name="X">player.X</param>
                     <param id="1" name="Y">player.Y</param>
                 </action>
+                <action id="-22" name="Set angle toward position" sid="938879923089545" type="enemyrifle">
+                    <param id="0" name="X">player.X</param>
+                    <param id="1" name="Y">player.Y</param>
+                </action>
             </actions>
         </event-block>
         <event-block any="1" sid="283941129499364">
@@ -52,14 +56,17 @@
                 <condition id="0" name="On collision with another object" sid="707682767674188" type="player">
                     <param id="0" name="Object">pinnen</param>
                 </condition>
-                <condition id="0" name="On collision with another object" sid="619487801369981" type="kogel">
-                    <param id="0" name="Object">player</param>
-                </condition>
                 <condition id="0" name="On collision with another object" sid="943078230450961" type="player">
                     <param id="0" name="Object">enemy</param>
                 </condition>
                 <condition id="0" name="On collision with another object" sid="508994961457065" type="player">
                     <param id="0" name="Object">enemyshotgun</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="172485285504074" type="player">
+                    <param id="0" name="Object">kogel</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="359720039499619" type="player">
+                    <param id="0" name="Object">lasershot</param>
                 </condition>
             </conditions>
             <actions>
@@ -77,8 +84,14 @@
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="Image point">0</param>
                 </action>
+                <action id="0" name="Spawn another object" sid="364810006615240" type="waarenemyriflestond">
+                    <param id="0" name="Object">enemyrifle</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
                 <action id="-9" name="Destroy" sid="847109951029238" type="waarEnemyStond" />
                 <action id="-9" name="Destroy" sid="440242717410978" type="waarenemyshotgunstond" />
+                <action id="-9" name="Destroy" sid="792235787806798" type="waarenemyriflestond" />
                 <action id="-9" name="Destroy" sid="723558871284558" type="kogel" />
             </actions>
         </event-block>
@@ -226,14 +239,15 @@
                 <condition id="1" name="Is overlapping another object" sid="762657677034762" type="kogel">
                     <param id="0" name="Object">vloer</param>
                 </condition>
-                <condition id="1" name="Is overlapping another object" sid="499506331793197" type="kogel">
-                    <param id="0" name="Object">offscreen</param>
-                </condition>
+                <condition id="-3" inverted="1" name="Is on-screen" sid="499506331793197" type="kogel" />
                 <condition id="1" name="Is overlapping another object" sid="106229947673461" type="kogel">
                     <param id="0" name="Object">pinnen</param>
                 </condition>
                 <condition id="1" name="Is overlapping another object" sid="704436935439971" type="kogel">
                     <param id="0" name="Object">buitenLayout</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="876145453621748" type="kogel">
+                    <param id="0" name="Object">lasershot</param>
                 </condition>
             </conditions>
             <actions>
@@ -407,6 +421,180 @@
                     <param id="2" name="Image point">0</param>
                 </action>
                 <action id="-9" name="Destroy" sid="256657005566980" type="kogel" />
+            </actions>
+        </event-block>
+        <event-block sid="711630005335415">
+            <conditions>
+                <condition id="-13" name="Is between angles" sid="101292598067172" type="enemyrifle">
+                    <param id="0" name="First angle">90</param>
+                    <param id="1" name="Second angle">270</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Set flipped" sid="191429995408966" type="enemyrifle">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="182488151569556">
+            <conditions>
+                <condition id="-13" name="Is between angles" sid="354333370160283" type="enemyrifle">
+                    <param id="0" name="First angle">270</param>
+                    <param id="1" name="Second angle">450</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Set flipped" sid="956484204785071" type="enemyrifle">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="944100452121399">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="311652627522983" type="System">
+                    <param id="0" name="Interval (seconds)">0.3</param>
+                </condition>
+                <condition id="-3" name="Is on-screen" sid="217641874652885" type="enemyrifle" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="140943165218414" type="enemyrifle">
+                    <param id="0" name="Object">kogel</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="429182261661108" type="kogel">
+                    <param id="0" name="Instance variable">afkomst</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="113177723528425" type="Audio">
+                    <param id="0" name="Audio file">schietgeluid</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="750469469495933">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="701149105718200" type="System" />
+                <condition id="-7" name="Compare instance variable" sid="148714149875961" type="laser">
+                    <param id="0" name="Instance variable">richting</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-18" name="Rotate clockwise" sid="370750163017545" type="laser">
+                    <param id="0" name="Degrees">0.1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="807869907435113">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="503386703301290" type="System" />
+                <condition id="-7" name="Compare instance variable" sid="967199962954319" type="laser">
+                    <param id="0" name="Instance variable">richting</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-18" name="Rotate clockwise" sid="351617729309569" type="laser">
+                    <param id="0" name="Degrees">-0.1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="720524338438812">
+            <conditions>
+                <condition id="-13" name="Is between angles" sid="472141263088006" type="laser">
+                    <param id="0" name="First angle">0</param>
+                    <param id="1" name="Second angle">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="111414431614508" type="laser">
+                    <param id="0" name="Instance variable">richting</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="245633575722842">
+            <conditions>
+                <condition id="-13" name="Is between angles" sid="666403775158216" type="laser">
+                    <param id="0" name="First angle">180</param>
+                    <param id="1" name="Second angle">182</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="298834332538225" type="laser">
+                    <param id="0" name="Instance variable">richting</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="699354206450038">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="323694665487729" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="393929882675229" type="laser">
+                    <param id="0" name="Object">lasershot</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="392927871745534">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="255317199773915" type="lasershot">
+                    <param id="0" name="Object">obstakel</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="740323419874011" type="lasershot">
+                    <param id="0" name="Object">vloer</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="579896815881300" type="lasershot">
+                    <param id="0" name="Object">pinnen</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="906350747811884" type="lasershot">
+                    <param id="0" name="Object">buitenLayout</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="703261090456074" type="lasershot" />
+            </actions>
+        </event-block>
+        <event-block sid="809839405988699">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="687089748410697" type="kogel">
+                    <param id="0" name="Object">enemyrifle</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="281807756156004" type="kogel">
+                    <param id="0" name="Instance variable">afkomst</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="932567355153965" type="enemyrifle" />
+                <action id="0" name="Spawn another object" sid="269790395336765" type="enemyrifle">
+                    <param id="0" name="Object">waarenemyriflestond</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="318481053748170" type="kogel" />
+            </actions>
+        </event-block>
+        <event-block sid="192333279976122">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="596885551342804" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="654448263503643" type="Audio">
+                    <param id="0" name="Audio file">01 - Track 1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
     </events>
