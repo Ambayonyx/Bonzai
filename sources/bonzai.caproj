@@ -38,6 +38,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>Layout 4</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -642,6 +643,21 @@
         <object-type name="MENU" sid="389272631736788">
             <plugin id="Text" />
         </object-type>
+        <object-type name="einde" sid="634588992578783">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="531225026176652" speed="5">
+                    <frame duration="1" hotspotX="0.342857" hotspotY="0.563253" original-source="C:\Users\eddie_000\Documents\pws\portal deur.png">
+                        <collision-poly>
+                            <point x="0.337143" y="0.00301205" />
+                            <point x="0.994286" y="0.563253" />
+                            <point x="0.337143" y="0.996988" />
+                            <point x="0.00571429" y="0.563253" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -660,9 +676,9 @@
         <event-sheet>Event sheet 5.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="9" />
-        <global-instance type="Mouse" uid="668" />
-        <global-instance type="Audio" uid="669">
+        <global-instance type="Keyboard" uid="760" />
+        <global-instance type="Mouse" uid="761" />
+        <global-instance type="Audio" uid="762">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>

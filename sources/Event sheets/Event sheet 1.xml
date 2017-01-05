@@ -271,6 +271,12 @@
                 </action>
                 <action id="-9" name="Destroy" sid="735712370409660" type="waarEnemyStond" />
                 <action id="-9" name="Destroy" sid="844999582948436" type="waarenemyshotgunstond" />
+                <action id="0" name="Play" sid="396671025417605" type="Audio">
+                    <param id="0" name="Audio file">CHT2_Cinematic_Transition_101</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="968110028346040">
@@ -318,6 +324,12 @@
                 <action id="-3" name="Set position" sid="144734500152319" type="checkpoint">
                     <param id="0" name="X">player.X</param>
                     <param id="1" name="Y">player.Y</param>
+                </action>
+                <action id="0" name="Play" sid="159994503540818" type="Audio">
+                    <param id="0" name="Audio file">CHT2_Cinematic_Transition_101</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -591,9 +603,21 @@
             <actions>
                 <action id="0" name="Play" sid="654448263503643" type="Audio">
                     <param id="0" name="Audio file">01 - Track 1</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="203548276333996">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="809862058290293" type="player">
+                    <param id="0" name="Object">einde</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="648810654337790" type="System">
+                    <param id="0" name="Layout">Layout 3</param>
                 </action>
             </actions>
         </event-block>
