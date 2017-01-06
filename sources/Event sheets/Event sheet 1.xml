@@ -622,5 +622,16 @@
                 <action id="33" name="Stop all" sid="253227197458722" type="Audio" />
             </actions>
         </event-block>
+        <event-block sid="427290354360934">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="491153749074944" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="476665687433940" type="player">
+                    <param id="0" name="X">checkpoint.X</param>
+                    <param id="1" name="Y">checkpoint.Y</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
