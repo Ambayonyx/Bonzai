@@ -196,7 +196,7 @@
                 </instance>
                 <instance type="checkpoint" uid="74">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -218,7 +218,7 @@
                 </instance>
                 <instance type="waarEnemyStond" uid="75">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -879,7 +879,7 @@
                 </instance>
                 <instance type="waarenemyshotgunstond" uid="270">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -901,7 +901,7 @@
                 </instance>
                 <instance type="waarenemyriflestond" uid="672">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -980,8 +980,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>129</x>
-                        <y>2873</y>
+                        <x>6728</x>
+                        <y>523</y>
                         <z>0</z>
                         <width>50</width>
                         <height>55</height>
@@ -9004,8 +9004,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>6874</x>
-                        <y>487</y>
+                        <x>6850</x>
+                        <y>-123</y>
                         <z>0</z>
                         <width>68.948997498</width>
                         <height>130.805999756</height>
@@ -12650,28 +12650,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="pinnen" uid="376">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>4348</x>
-                        <y>2318</y>
-                        <z>0</z>
-                        <width>96.207450867</width>
-                        <height>30.766849518</height>
-                        <depth>0</depth>
-                        <hotspotX>0.517766476</hotspotX>
-                        <hotspotY>0.714285731</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="obstakel" uid="377">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -14866,57 +14844,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="enemyshotgun" uid="456">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Turret">
-                            <properties>
-                                <range>700</range>
-                                <rate-of-fire>1</rate-of-fire>
-                                <rotate>Yes</rotate>
-                                <rotate-speed>180</rotate-speed>
-                                <target-mode>Nearest</target-mode>
-                                <predictive-aim>Yes</predictive-aim>
-                                <projectile-speed>500</projectile-speed>
-                                <initial-state>Enabled</initial-state>
-                                <use-collision-cells>Yes</use-collision-cells>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Platform">
-                            <properties>
-                                <max-speed>330</max-speed>
-                                <acceleration>1500</acceleration>
-                                <deceleration>1500</deceleration>
-                                <jump-strength>650</jump-strength>
-                                <gravity>1500</gravity>
-                                <max-fall-speed>1000</max-fall-speed>
-                                <double-jump>Disabled</double-jump>
-                                <jump-sustain>0</jump-sustain>
-                                <default-controls>No</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>6239.612304688</x>
-                        <y>834.833740234</y>
-                        <z>0</z>
-                        <width>85.320838928</width>
-                        <height>50.679294586</height>
-                        <depth>0</depth>
-                        <hotspotX>0.439849615</hotspotX>
-                        <hotspotY>0.474683553</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="enemyshotgun" uid="457">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -15584,7 +15511,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>5534</x>
+                        <x>5554</x>
                         <y>802</y>
                         <z>0</z>
                         <width>35</width>
@@ -22789,8 +22716,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>8763</x>
-                        <y>817</y>
+                        <x>6874</x>
+                        <y>487</y>
                         <z>0</z>
                         <width>68.948997498</width>
                         <height>130.805999756</height>
